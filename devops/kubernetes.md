@@ -32,7 +32,7 @@ A Kubernetes cluster consists of two types of resources:
 
 #### Cluster Diagram
 
-![alt text](https://d33wubrfki0l68.cloudfront.net/283cc20bb49089cb2ca54d51b4ac27720c1a7902/34424/docs/tutorials/kubernetes-basics/public/images/module_01_cluster.svg "cluster Diagram")
+<img src="https://d33wubrfki0l68.cloudfront.net/283cc20bb49089cb2ca54d51b4ac27720c1a7902/34424/docs/tutorials/kubernetes-basics/public/images/module_01_cluster.svg" alt="cluster Diagram" width="400">
 
 **The Control Plane is responsible for managing the cluster.** The Control Plane coordinates all activities in your cluster, such as scheduling applications, maintaining applications' desired state, scaling applications, and rolling out new updates.
 
@@ -57,7 +57,7 @@ Once you have a running Kubernetes cluster, you can deploy your containerized ap
 Once the application instances are created, a Kubernetes Deployment Controller continuously monitors those instances. If the Node hosting an instance goes down or is deleted, the Deployment controller replaces the instance with an instance on another Node in the cluster. **This provides a self-healing mechanism to address machine failure or maintenance.**
 
 #### Deploying your first app on Kubernetes
-![alt text](https://d33wubrfki0l68.cloudfront.net/8700a7f5f0008913aa6c25a1b26c08461e4947c7/cfc2c/docs/tutorials/kubernetes-basics/public/images/module_02_first_app.svg "Deploying your first app on Kubernetes")
+<img src="https://d33wubrfki0l68.cloudfront.net/8700a7f5f0008913aa6c25a1b26c08461e4947c7/cfc2c/docs/tutorials/kubernetes-basics/public/images/module_02_first_app.svg" alt="Deploying your first app on Kubernetes" width="400">
 
 > Applications need to be packaged into one of the supported container formats in order to be deployed on Kubernetes
 
@@ -87,7 +87,7 @@ A Pod models an application-specific "logical host" and can contain different ap
 Each Pod is tied to the Node where it is scheduled, and remains there until termination (according to restart policy) or deletion. In case of a Node failure, identical Pods are scheduled on other available Nodes in the cluster.
 
 #### Pods overview
-![alt text](https://d33wubrfki0l68.cloudfront.net/fe03f68d8ede9815184852ca2a4fd30325e5d15a/98064/docs/tutorials/kubernetes-basics/public/images/module_03_pods.svg "Pods overview")
+<img src="https://d33wubrfki0l68.cloudfront.net/fe03f68d8ede9815184852ca2a4fd30325e5d15a/98064/docs/tutorials/kubernetes-basics/public/images/module_03_pods.svg" alt="Pods overview" width="800">
 
 #### 3.2 Kubernetes Nodes
 
@@ -101,7 +101,7 @@ Every Kubernetes Node runs at least:
 - A container runtime (like Docker) responsible for pulling the container image from a registry, unpacking the container, and running the application.
 
 #### Node overview
-![alt text](https://d33wubrfki0l68.cloudfront.net/5cb72d407cbe2755e581b6de757e0d81760d5b86/a9df9/docs/tutorials/kubernetes-basics/public/images/module_03_nodes.svg "Node overview")
+<img src="https://d33wubrfki0l68.cloudfront.net/5cb72d407cbe2755e581b6de757e0d81760d5b86/a9df9/docs/tutorials/kubernetes-basics/public/images/module_03_nodes.svg" alt="Node overview" width="400">
 
 > Containers should only be scheduled together in a single Pod if they are tightly coupled and need to share resources such as disk.
 
@@ -129,6 +129,6 @@ Services match a set of Pods using [labels and selectors](https://kubernetes.io/
 - Embed version tags
 - Classify an object using tags
 
-![alt text](https://d33wubrfki0l68.cloudfront.net/7a13fe12acc9ea0728460c482c67e0eb31ff5303/2c8a7/docs/tutorials/kubernetes-basics/public/images/module_04_labels.svg "Services and Labels")
+<img src="https://d33wubrfki0l68.cloudfront.net/7a13fe12acc9ea0728460c482c67e0eb31ff5303/2c8a7/docs/tutorials/kubernetes-basics/public/images/module_04_labels.svg" alt="Services and Labels" width="500">
 
 > Labels can be attached to objects at creation time or later on. They can be modified at any time. Let's expose our application now using a Service and apply some labels.
