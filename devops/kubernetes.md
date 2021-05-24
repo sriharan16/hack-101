@@ -3,10 +3,6 @@ layout: post
 title:  "Welcome to Kubernetes!"
 ---
 
-.post img {
-  background: white;
-}
-
 ## What is Kubernetes?
 Kubernetes is an open source container orchestration engine for automating deployment, scaling, and management of containerized applications. The open source project is hosted by the Cloud Native Computing Foundation [CNCF](https://www.cncf.io/about).
 
@@ -95,7 +91,7 @@ A Pod models an application-specific "logical host" and can contain different ap
 Each Pod is tied to the Node where it is scheduled, and remains there until termination (according to restart policy) or deletion. In case of a Node failure, identical Pods are scheduled on other available Nodes in the cluster.
 
 #### Pods overview
-<img src="https://d33wubrfki0l68.cloudfront.net/fe03f68d8ede9815184852ca2a4fd30325e5d15a/98064/docs/tutorials/kubernetes-basics/public/images/module_03_pods.svg" alt="Pods overview" width="800">
+<img src="https://d33wubrfki0l68.cloudfront.net/fe03f68d8ede9815184852ca2a4fd30325e5d15a/98064/docs/tutorials/kubernetes-basics/public/images/module_03_pods.svg" alt="Pods overview" width="800" style="background-color:white">
 
 #### 3.2 Kubernetes Nodes
 
