@@ -47,10 +47,11 @@ A Kubernetes cluster consists of two types of resources:
 When you deploy applications on Kubernetes, you tell the control plane to start the application containers. The control plane schedules the containers to run on the cluster's nodes. **The nodes communicate with the control plane using the [Kubernetes API](https://kubernetes.io/docs/concepts/overview/kubernetes-api/), which the control plane exposes.** End users can also use the Kubernetes API directly to interact with the cluster.
 
 #### Useful commands:
-- `kubectl version`
-- `kubectl cluster-info`
-- `kubectl get nodes`
-
+```bash
+$ kubectl version
+$ kubectl cluster-info
+$ kubectl get nodes
+```
 
 ### 2. Kubernetes Deployments (Using kubectl to Create a Deployment)
 
@@ -61,7 +62,7 @@ Once you have a running Kubernetes cluster, you can deploy your containerized ap
 Once the application instances are created, a Kubernetes Deployment Controller continuously monitors those instances. If the Node hosting an instance goes down or is deleted, the Deployment controller replaces the instance with an instance on another Node in the cluster. **This provides a self-healing mechanism to address machine failure or maintenance.**
 
 #### Deploying your first app on Kubernetes
-<img src="https://d33wubrfki0l68.cloudfront.net/8700a7f5f0008913aa6c25a1b26c08461e4947c7/cfc2c/docs/tutorials/kubernetes-basics/public/images/module_02_first_app.svg" alt="Deploying your first app on Kubernetes" width="400" style="background-color:white">>
+<img src="https://d33wubrfki0l68.cloudfront.net/8700a7f5f0008913aa6c25a1b26c08461e4947c7/cfc2c/docs/tutorials/kubernetes-basics/public/images/module_02_first_app.svg" alt="Deploying your first app on Kubernetes" width="400" style="background-color:white">
 
 > Applications need to be packaged into one of the supported container formats in order to be deployed on Kubernetes
 
@@ -133,6 +134,6 @@ Services match a set of Pods using [labels and selectors](https://kubernetes.io/
 - Embed version tags
 - Classify an object using tags
 
-<img src="https://d33wubrfki0l68.cloudfront.net/7a13fe12acc9ea0728460c482c67e0eb31ff5303/2c8a7/docs/tutorials/kubernetes-basics/public/images/module_04_labels.svg" alt="Services and Labels" width="500" style="background-color:white">>
+<img src="https://d33wubrfki0l68.cloudfront.net/7a13fe12acc9ea0728460c482c67e0eb31ff5303/2c8a7/docs/tutorials/kubernetes-basics/public/images/module_04_labels.svg" alt="Services and Labels" width="500" style="background-color:white">
 
 > Labels can be attached to objects at creation time or later on. They can be modified at any time. Let's expose our application now using a Service and apply some labels.
