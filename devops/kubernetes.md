@@ -69,12 +69,13 @@ Once the application instances are created, a Kubernetes Deployment Controller c
 You can create and manage a Deployment by using the Kubernetes command line interface, **Kubectl.** Kubectl uses the Kubernetes API to interact with the cluster.
 
 #### Useful commands:
-- `kubectl create deployment kubernetes-bootcamp --image=gcr.io/google-samples/kubernetes-bootcamp:v1`
-- `kubectl get deployments`
-- `kubectl proxy` - The proxy enables direct access to the API from these terminals.
-- `curl http://localhost:8001/version`
-- `export POD_NAME=$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')`
-
+```bash
+$ kubectl create deployment kubernetes-bootcamp --image=gcr.io/google-samples/kubernetes-bootcamp:v1
+$ kubectl get deployments
+$ kubectl proxy (The proxy enables direct access to the API from these terminals.)
+$ curl http://localhost:8001/version
+$ export POD_NAME=$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')
+```
 
 ### 3. Kubernetes Pods and Nodes(Explore Your App)
 
@@ -111,16 +112,20 @@ Every Kubernetes Node runs at least:
 > Containers should only be scheduled together in a single Pod if they are tightly coupled and need to share resources such as disk.
 
 #### Useful commands:
-- `kubectl get` - list resources
-- `kubectl describe` - show detailed information about a resource
-- `kubectl logs` - print the logs from a container in a pod
-- `kubectl exec` - execute a command on a container in a pod
-- `kubectl get pods`, `kubectl describe pods`
-- `kubectl proxy`
-- `export POD_NAME=$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')`
-- `curl http://localhost:8001/api/v1/namespaces/default/pods/$POD_NAME/proxy/`
-- `kubectl logs $POD_NAME` - Anything that the application would normally send to STDOUT becomes logs
-- `kubectl exec $POD_NAME -- env`, `kubectl exec -ti $POD_NAME -- bash` - Execute command inside container
+```bash
+$ kubectl get (list resources)
+$ kubectl describe (show detailed information about a resource)
+$ kubectl logs (print the logs from a container in a pod)
+$ kubectl exec (execute a command on a container in a pod)
+$ kubectl get pods
+$ kubectl describe pods
+$ kubectl proxy
+$ export POD_NAME=$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')
+$ curl http://localhost:8001/api/v1/namespaces/default/pods/$POD_NAME/proxy/
+$ kubectl logs $POD_NAME (Anything that the application would normally send to STDOUT becomes logs)
+$ kubectl exec $POD_NAME -- env
+$ kubectl exec -ti $POD_NAME -- bash (Execute command inside container)
+```
 
 ### 4. Kubernetes Services(Using a Service to Expose Your App)
 
