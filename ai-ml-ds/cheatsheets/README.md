@@ -1,3 +1,3 @@
 ## $ ls ./machine-learning/cheatsheets
 
-[Conda](./conda-cheatsheet.pdf)
+- [Conda](./conda-cheatsheet.pdf)
