@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: pages
 title:  "Welcome to Kubernetes!"
 ---
 
