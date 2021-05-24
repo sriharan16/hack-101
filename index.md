@@ -1,4 +1,4 @@
-###  `$ dir`
+###  `$ ls ./`
 
 - [AI/ML](./ai-ml-ds)
 - [Databases](./database)
