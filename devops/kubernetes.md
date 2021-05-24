@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Welcome to Kubernetes!"
 ---
 
@@ -7,7 +7,7 @@ title:  "Welcome to Kubernetes!"
 Kubernetes is an open source container orchestration engine for automating deployment, scaling, and management of containerized applications. The open source project is hosted by the Cloud Native Computing Foundation [CNCF](https://www.cncf.io/about).
 
 
-## Kubernetes Basics
+### Kubernetes Basics
 This tutorial provides a walkthrough of the basics of the Kubernetes cluster orchestration system. Each module contains some background information on major Kubernetes features and concepts, and includes an interactive online tutorial. These interactive tutorials let you manage a simple cluster and its containerized applications for yourself.
 
 Using the interactive tutorials, you can learn to:
