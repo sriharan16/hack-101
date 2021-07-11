@@ -169,3 +169,7 @@ Services match a set of Pods using [labels and selectors](https://kubernetes.io/
 - `Namespace` - a logical separation between multiple applications and associated resources.
 - `Imperative configuration` - resource management technique, that operates and interacts directly with the live objects within the cluster.
 - `Declarative configuration` - resource management technique, that operates and manages resources using YAML manifests stored locally.
+
+### Further Reading
+
+[Kubernetes kubectl cheetsheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
