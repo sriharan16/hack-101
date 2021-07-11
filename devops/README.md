@@ -1,4 +1,4 @@
 ##  $ ls ./devops
 
-- [Kubernetes](./kubernetes.html)
+- [Kubernetes](./kubernetes)
 - [Docker](./docker.html)
