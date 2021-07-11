@@ -4,14 +4,14 @@ title:  "Welcome to Kubernetes!"
 ---
 
 Skip to [Kubernetes Basics Modules](#kubernetes-basics-modules)
-Skip to [Sample Commands](./useful_commands)
+
 
 ## What is Kubernetes?
 Kubernetes is an open source container orchestration engine for automating deployment, scaling, and management of containerized applications. The open source project is hosted by the Cloud Native Computing Foundation [CNCF](https://www.cncf.io/about).
 
 
 ### Kubernetes Basics
-This tutorial provides a walkthrough of the basics of the Kubernetes cluster orchestration system. Each module contains some background information on major Kubernetes features and concepts, and includes an interactive online tutorial. These interactive tutorials let you manage a simple cluster and its containerized applications for yourself.
+This tutorial provides a walkthrough of the basics of the Kubernetes cluster orchestration system. Each module contains some background information on major Kubernetes features and concepts, and includes an useful commands at each module. Find a set of [useful commands here](./useful_commands)
 
 Using the interactive tutorials, you can learn to:
 
