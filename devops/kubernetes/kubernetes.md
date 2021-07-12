@@ -11,7 +11,7 @@ Kubernetes is an open source container orchestration engine for automating deplo
 
 
 ### Kubernetes Basics
-This tutorial provides a walkthrough of the basics of the Kubernetes cluster orchestration system. Each module contains some background information on major Kubernetes features and concepts, and includes an useful commands at each module. Find a set of [useful commands here](./useful_commands)
+This tutorial provides a walkthrough of the basics of the Kubernetes cluster orchestration system. Each module contains some background information on major Kubernetes features and concepts, and includes an useful commands at each module. Find a set of [useful commands here](./useful_commands) and [cheatsheet here](./Kubernetes-Cheat-Sheet.pdf).
 
 Using the interactive tutorials, you can learn to:
 
